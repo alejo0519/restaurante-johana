@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Alejo's Pizza</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-danger" href="index.html">
+        <i class="fas fa-pizza-slice me-2"></i>Alejo's Pizza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reserva.html">Reserva</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="domicilios.html">Domicilios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="text-white bg-danger py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Contáctanos</h1>
+      <p class="lead">Estamos aquí para servirte las mejores pizzas</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <h3 class="text-danger mb-3"><i class="fas fa-info-circle me-2"></i>Información</h3>
+          <p><i class="fas fa-map-marker-alt text-danger me-2"></i>Calle 123 #45-67, La Candelaria, Bogotá</p>
+          <p><i class="fas fa-phone text-danger me-2"></i>+57 (1) 234-5678</p>
+          <p><i class="fas fa-envelope text-danger me-2"></i>info@alejospizza.com</p>
+          <p><i class="fas fa-clock text-danger me-2"></i>Lun a Dom: 11:00 AM - 10:00 PM</p>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-danger mb-3"><i class="fas fa-comment-dots me-2"></i>Formulario</h3>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section text-center">
+    <div class="container">
+      <h2 class="mb-4">O pide directamente</h2>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn btn-success btn-lg" id="whatsappBtn">
+          <i class="fab fa-whatsapp me-2"></i> WhatsApp
+        </button>
+        <button class="btn btn-primary btn-lg" id="callBtn">
+          <i class="fas fa-phone me-2"></i> Llamar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Alejo's Pizza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

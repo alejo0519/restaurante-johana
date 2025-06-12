@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva - Alejo's Pizza</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-danger" href="index.html">
+        <i class="fas fa-pizza-slice me-2"></i>Alejo's Pizza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reserva.html">Reserva</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="domicilios.html">Domicilios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="text-white bg-danger py-5 text-center mt-5">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Reserva tu Mesa</h1>
+      <p class="lead">Haz tu reserva fácilmente para disfrutar en nuestro restaurante</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <form class="row g-3" id="reservaForm">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombre" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="telefono" required>
+        </div>
+        <div class="col-md-6">
+          <label for="fecha" class="form-label">Fecha</label>
+          <input type="date" class="form-control" id="fecha" required>
+        </div>
+        <div class="col-md-6">
+          <label for="hora" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="hora" required>
+        </div>
+        <div class="col-md-6">
+          <label for="personas" class="form-label">Número de personas</label>
+          <input type="number" class="form-control" id="personas" min="1" required>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-danger w-100">Reservar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Alejo's Pizza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('reservaForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('¡Reserva enviada! Te confirmaremos pronto.');
+      this.reset();
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

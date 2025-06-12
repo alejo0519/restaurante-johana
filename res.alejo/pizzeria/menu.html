@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú - Alejo's Pizza</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/style.css">
+  <style>
+    .menu-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 0.375rem;
+      border-top-right-radius: 0.375rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-danger" href="index.html">
+        <i class="fas fa-pizza-slice me-2"></i>Alejo's Pizza
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reserva.html">Reserva</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="domicilios.html">Domicilios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menú</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="text-white bg-danger py-5 text-center">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Nuestro Menú</h1>
+      <p class="lead">Pizzas artesanales con ingredientes de calidad</p>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Pizza Items con imagen -->
+        <div class="col-md-4 mb-4">
+          <div class="card menu-card">
+            <img src="../img/pizza-margarita-3684-1.jpg" alt="Pizza Margherita">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pizza Margherita</h5>
+              <p>Salsa de tomate, mozzarella fresca, albahaca.</p>
+              <p class="fw-bold text-danger">$18.000</p>
+              <button class="btn btn-custom">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card menu-card">
+            <img src="../img/e9e1e82cb873-pepperoni-pizza-abob-t.webp" alt="Pizza Pepperoni">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pizza Pepperoni</h5>
+              <p>Con pepperoni premium y queso mozzarella.</p>
+              <p class="fw-bold text-danger">$22.000</p>
+              <button class="btn btn-custom">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card menu-card">
+            <img src="../img/Pizza_vegetariana.jpg" alt="Pizza Vegetariana">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pizza Vegetariana</h5>
+              <p>Vegetales frescos: champiñón, pimentón, cebolla.</p>
+              <p class="fw-bold text-danger">$20.000</p>
+              <button class="btn btn-custom">Pedir</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section text-center">
+    <div class="container">
+      <h2 class="mb-4">Haz tu Pedido Ahora</h2>
+      <p class="mb-4">Ordena por WhatsApp o revisa nuestro menú completo</p>
+      <a href="contacto.html" class="btn btn-light btn-lg">
+        <i class="fas fa-phone me-2"></i> Contactar
+      </a>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2025 Alejo's Pizza. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
